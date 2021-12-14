@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tong = 0;
+    let count = 0;
+    for (let i = 1; i < 300; i++) {
+        if (i % 7 == 0) {
+            tong += i;
+            count ++ ;
+            if (count ==30){
+                break;
+            }
+        }
+    }
+    document.write(tong)
+    let t=0;
+    for (let j=1;j<=30;j++){
+        t += j*7;
+    }
+    document.write('<br>'+t)
+</script>
+</body>
+</html>
