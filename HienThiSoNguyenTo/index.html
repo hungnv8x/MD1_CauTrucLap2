@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = prompt('Nhap so luong so nguyen to can in : ')
+    let count = 0;
+    let N = 2;
+    let inSoNguyenTo = "";
+    for (count; count < numbers; ) {
+        let bl = true;
+        for (let i = 2; i < N; i++) {
+            if (N % i == 0) {
+                bl = false;
+                break;
+            }
+        }
+        if (bl == true) {
+            inSoNguyenTo+=N +' ';
+            count++
+            N++;
+        }else {
+            N++;
+        }
+    }
+    document.write(inSoNguyenTo)
+</script>
+</body>
+</html>
