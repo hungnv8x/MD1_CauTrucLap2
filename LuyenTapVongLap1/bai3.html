@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
-  let fb='1 1';
   let a=1
   let b=1;
-  let c;
-  for (let count = 3;count<=20;count++){
-      c=b;
-      b=a+b;
-      a=c;
-      fb +=' '+b
+  let temp;
+  let tong=0;
+  for (let count = 0;count<=5;count++){
+      document.write(a+'--')
+      tong+= a;
+      temp=a+b;
+      a=b;
+      b=temp;
   }
-  document.write(fb)
+  document.write('<br>')
+document.write(tong)
 </script>
 </body>
 </html>

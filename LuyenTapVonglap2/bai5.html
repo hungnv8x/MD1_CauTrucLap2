@@ -12,15 +12,15 @@
 <p id="result">Result : </p>
 <script>
 
-   function tinh() {
-       let tiengui = +document.getElementById('tienGui').value;
-       let sothang = +document.getElementById('soThang').value;
-       let laisuat = +document.getElementById('laiSuat').value;
-       for (let i=1;i<=sothang;i++){
-           tiengui += tiengui*laisuat/100;
-       }
-       document.getElementById('result').innerHTML = 'Result : '+tiengui;
-   }
+    function tinh() {
+        let tiengui = +document.getElementById('tienGui').value;
+        let sothang = +document.getElementById('soThang').value;
+        let laisuat = +document.getElementById('laiSuat').value;
+        for (let i = 1; i <= sothang; i++) {
+            tiengui += tiengui * laisuat / 100;
+        }
+        document.getElementById('result').innerHTML = 'Result : ' + tiengui;
+    }
 
 </script>
 </body>
